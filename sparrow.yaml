@@ -1,0 +1,12 @@
+tasks:
+  -
+    name: fez-test
+    default: true
+    language: Bash
+    code: |
+      set -e
+      sudo apk add tar
+      echo $PATH
+      zef install --/test fez
+      fez --version
+      
